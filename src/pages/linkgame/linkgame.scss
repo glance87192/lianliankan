@@ -1,0 +1,56 @@
+$square_width: 80px;
+$square_height: 80px;
+
+.game-title {
+  font-weight: bold;
+}
+
+.game-container {
+  .game-matrix {
+    .game-matrix-row {
+      .game-matrix-square {
+        width: $square_width;
+        height: $square_height;
+        display: inline-block;
+        text-align: center;
+        line-height: $square_height;
+        vertical-align: middle;
+        background-color: antiquewhite;
+        font-size: 1.5rem;
+        color: rgb(22, 19, 15);
+        margin: 2px;
+        transition-duration: 100ms;
+      }
+
+      .game-matrix-square:hover {
+        font-size: 2rem;
+        text-decoration: underline;
+      }
+
+      .game-matrix-square-selected {
+        width: $square_width;
+        height: $square_height;
+        display: inline-block;
+        text-align: center;
+        line-height: $square_height;
+        vertical-align: middle;
+        background-color: lightcoral;
+        font-size: 1.5rem;
+        color: rgb(22, 19, 15);
+        margin: 2px;
+        transition-duration: 100ms;
+      }
+
+      .game-matrix-square-hidden {
+        width: $square_width;
+        height: $square_height;
+        display: inline-block;
+        text-align: center;
+        line-height: $square_height;
+        vertical-align: middle;
+        margin: 2px;
+        visibility: hidden;
+      }
+    }
+  }
+}
